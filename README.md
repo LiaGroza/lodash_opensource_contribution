@@ -11,7 +11,8 @@
 
 The following section contains the **official** [Lodash documentation](https://lodash.com/docs/4.17.15) (that I highly recommend you to visit) for the methods that I implemented in this repository. *I only own the implementations included in this repo. This is part of my attempt to contribute to Lodash, but these implementations are not included in the official open-source repository.*
 
-## Methods:
+## **Methods:**
+## **Number Methods**
 ### **_.clamp(number, [lower], upper)**
 
 Clamps number within the inclusive lower and upper bounds.
