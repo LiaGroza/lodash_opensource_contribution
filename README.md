@@ -77,5 +77,83 @@ _.inRange(-3, -2, -6);
 ```
 ---
 
+## **String Methods**
+### **_.words([string=''], [pattern])**
+
+Splits string into an array of its words.
+
+#### **Since**
+3.0.0
+
+#### **Arguments**
+**[string=''] (string)**: The string to inspect.
+**[pattern] (RegExp|string)**: The pattern to match words.
+
+#### **Returns**
+**(Array)**: Returns the words of string.
+
+#### **Example**
+```javascript
+_.words('fred, barney, & pebbles');
+// => ['fred', 'barney', 'pebbles']
+ 
+_.words('fred, barney, & pebbles', /[^, ]+/g);
+// => ['fred', 'barney', '&', 'pebbles']
+```
+
+---
+
+### **_.pad([string=''], [length=0], [chars=' '])**
+
+Pads string on the left and right sides if it's shorter than length. Padding characters are truncated if they can't be evenly divided by length.
+
+#### **Since**
+3.0.0
+
+#### **Arguments**
+**[string=''] (string)**: The string to pad.
+**[length=0] (number)**: The padding length.
+**[chars=' '] (string)**: The string used as padding.
+
+#### **Returns**
+**(string)**: Returns the padded string.
+
+#### **Example**
+```javascript
+_.pad('abc', 8);
+// => '  abc   '
+ 
+_.pad('abc', 8, '_-');
+// => '_-abc_-_'
+ 
+_.pad('abc', 3);
+// => 'abc'
+```
+
+## **Array Methods**
+### **_.chunk(array, [size=1])**
+
+Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements.
+
+#### **Since**
+3.0.0
+
+#### **Arguments**
+**array (Array)**: The array to process.
+**[size=1] (number)**: The length of each chunk
+
+#### **Returns**
+**(Array)**: Returns the new array of chunks.
+
+#### **Example**
+```javascript
+_.chunk(['a', 'b', 'c', 'd'], 2);
+// => [['a', 'b'], ['c', 'd']]
+ 
+_.chunk(['a', 'b', 'c', 'd'], 3);
+// => [['a', 'b', 'c'], ['d']]
+```
+
+---
 
 
