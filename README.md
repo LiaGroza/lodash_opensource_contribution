@@ -1,5 +1,5 @@
 # _lodash
- Ten of the most popular Lodash methods that add new functionality for numbers, strings, objects, and arrays reimplemented in JavaScript (ECMAScript2020).
+ Ten of the most popular Lodash methods that add new functionality for numbers, strings, objects, and arrays reimplemented in JavaScript (ECMAScript2020)
  If you wanted to use this library in your own projects right now, you could load it, using a Content Delivery Network (CDN) link, in the <head> of your project’s index.html file, like so:
  
 ```html
